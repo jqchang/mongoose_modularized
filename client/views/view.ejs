@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+    td, th {
+      border: 1px black solid;
+    }
+  </style>
+  <body>
+    <table>
+      <tr>
+        <td>Name:</td>
+        <td><%= pkmn.name %></td>
+      </tr>
+      <tr>
+        <td>Types:</td>
+        <td>
+          <%=pkmn.types[0]%><br>
+          <%=pkmn.types[1]%>
+        </td>
+      </tr>
+      <tr>
+        <td>Moves:</td>
+        <td>
+          <%=pkmn.moves[0]%><br>
+          <%=pkmn.moves[1]%><br>
+          <%=pkmn.moves[2]%><br>
+          <%=pkmn.moves[3]%>
+        </td>
+      </tr>
+    </table>
+    <a href='/pokemon/edit/<%=pkmn._id%>'>Edit</a> | <a href='/'>Back</a>
+    </form>
+  </body>
+</html>

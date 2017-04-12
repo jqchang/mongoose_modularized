@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+    td, th {
+      border: 1px black solid;
+    }
+  </style>
+  <body>
+    <form action='/pokemon' method='post'>
+      <table>
+        <tr>
+          <td>Name:</td>
+          <td><input type='text' name='name'></td>
+        </tr>
+        <tr>
+          <td>Types:</td>
+          <td>
+            <input type='text' name='type1'><br>
+            <input type='text' name='type2'>
+          </td>
+        </tr>
+        <tr>
+          <td>Moves:</td>
+          <td>
+            <input type='text' name='move1'><br>
+            <input type='text' name='move2'><br>
+            <input type='text' name='move3'><br>
+            <input type='text' name='move4'>
+          </td>
+        </tr>
+      </table>
+      <input type='submit'>
+    </form>
+  </body>
+</html>
